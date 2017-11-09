@@ -12,11 +12,17 @@
     .navbar {
       margin-bottom: 50px;
       border-radius: 0;
+      border-color:#381A1A;
+      background-color: #012459;
+      
+      
     }
     
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
       margin-bottom: 0;
+      background-image: url("https://placeimg.com/800/300/people");
+      opacity: 0.5;
     }
    
     /* Add a gray background color and some padding to the footer */
@@ -24,14 +30,23 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
+    
+    .Urbaneheader {
+    color: #000000;
+    }
+    .marketbox {
+    border-color:#381A1A;
+    -webkit-border-radius: 0px 0px 0px 0px;
+border-radius: 0px 0px 0px 0px;    }
   </style>
 </head>
 <body>
 
 <div class="jumbotron">
-  <div class="container text-center">
-    <h1>Honey Roots</h1>      
-    <p>Kinky. Curly. Straight.<br / > Hair, Skin & Urban Culture </p>
+  <div class="container text-center Urbaneheader">
+  
+    <h1 style="font-family:Courier New,Courier, monospace">Urbane</h1>      
+    <p>Hair, Skin, & Urban Culture </p>
   </div>
 </div>
 
@@ -48,7 +63,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_analytics&stacked=h" target="_blank">Products</a></li>
+        <li>
+        <a href="" target="_blank">Products</a></li>
         <li><a href="#">Deals</a></li>
         <li><a href="#">Stores</a></li>
         <li><a href="#">Contact</a></li>
@@ -65,22 +81,19 @@
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Featured Product</div>
+      <div class="panel panel-primary marketbox">
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-danger">
-        <div class="panel-heading">Featured Product</div>
+      <div class="panel panel-danger marketbox">
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
     <div class="col-sm-4"> 
-      <div class="panel panel-success">
-        <div class="panel-heading">Featured Product</div>
+      <div class="panel panel-success marketbox">
         <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
