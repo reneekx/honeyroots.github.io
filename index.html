@@ -1,147 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-      border-color:#381A1A;
-      background-color: #012459;
-      
-      
-    }
-    
-    /* Remove the jumbotron's default bottom margin */ 
-     .jumbotron {
-      margin-bottom: 0;
-      /*background-image: url("https://placeimg.com/800/300/people");*/
-      background-color: #FFFEFC;
-      /*opacity: 0.5;*/
-    }
-   
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-    .Urbaneheader {
-    color: FAF9F7;
-    }
-    .marketbox {
-    border-color:#381A1A;
-    -webkit-border-radius: 0px 0px 0px 0px;
-border-radius: 0px 0px 0px 0px;    }
-  </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+            border-color: #381A1A;
+            background-color: #012459;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+            /*background-image: url("https://placeimg.com/800/300/people");*/
+            background-color: #FFFEFC;
+            /*opacity: 0.5;*/
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        .Urbaneheader {
+            color: #826868;
+        }
+
+        .marketbox {
+            
+            -webkit-border-radius: 0px 0px 0px 0px;
+            border-radius: 0px 0px 0px 0px;
+            border: none;
+        }
+        dd.product_item:nth-of-type(4n+1) {
+	        clear: left;
+        }
+        .product_list dl, .product_list dd {
+	        float: left;
+        }
+        @media screen and (min-width: 32.5rem)racketeer.4cb46dde1d26.css:25.product_item {
+	width: 25%;
+        }
+        .product_item {
+	        margin: 0;
+	        position: relative;
+	        width: 50%;
+        }
+        .product_item {
+	        position: relative;
+        }
+        dl, dt, dd {
+	        background: transparent;
+	        border: 0;
+	        font-size: 100%;
+	        margin: 0;
+	        outline: 0;
+	        padding: 0;
+	        vertical-align: baseline;
+            text-align:left;
+        }
+        dd {
+	        display: block;
+	        -webkit-margin-start: 40px;
+        }
+        .product_list, .product_list a {
+	        color: #282828;
+        }
+        .hide {
+            display: none
+        }
+        
+        dd {
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+    </style>
 </head>
 <body>
+    <div class="jumbotron">
+        <div class="container text-center Urbaneheader">
 
-<div class="jumbotron">
-  <div class="container text-center Urbaneheader">
-  
-    <h1 style="font-family:Courier New,Courier, monospace">Urbane</h1>      
-    <p>Hair, Skin, & Urban Culture </p>
-  </div>
-</div>
+            <h1 style="font-family:Courier New,Courier, monospace">Urbane</h1>
+            <p>Hair, Skin, & Urban Culture </p>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li>
+                        <a href="" target="_blank">Products</a>
+                    </li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                    <!--<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>-->
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li>
-        <a href="" target="_blank">Products</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Stores</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <!--<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>-->
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--<div class="container">
+        <div class="row">
+            <div class="Catalog-Product">
+                <div class="Product-tile">
+                    <p>
+                        <a href="/product/7980/Bear/tab,guys/style,shirt" rel="product"> <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" alt="Image"> </a>
+                    </p>
+                    <dl>
+                        <dt class="hide">Title</dt>
+                        <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                        <dt class="hide">Designer</dt>
+                        <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                        <dt class="hide">Details</dt>
+                    </dl>
+                    <dl>
+                        <dt class="hide">Price</dt>
+                        <dd>$25 $15 and up</dd>
+                    </dl>
+                    <dl>
+                        <dd>40% OFF</dd>
+                    </dl>
 
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary marketbox">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary marketbox">
+                    <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                        <dl>
+                            <dt class="hide">Title</dt>
+                            <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                            <dt class="hide">Designer</dt>
+                            <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                            <dt class="hide">Details</dt>
+                        </dl>
+                        <dl>
+                            <dt class="hide">Price</dt>
+                            <dd>$25 $15 and up</dd>
+                        </dl>
+                        <dl>
+                            <dd>40% OFF</dd>
+                        </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger marketbox">
+                    <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <dl>
+                        <dt class="hide">Title</dt>
+                        <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                        <dt class="hide">Designer</dt>
+                        <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                        <dt class="hide">Details</dt>
+                    </dl>
+                    <dl>
+                        <dt class="hide">Price</dt>
+                        <dd>$25 $15 and up</dd>
+                    </dl>
+                    <dl>
+                        <dd>40% OFF</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success marketbox">
+                    <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <dl>
+                        <dt class="hide">Title</dt>
+                        <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                        <dt class="hide">Designer</dt>
+                        <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                        <dt class="hide">Details</dt>
+                    </dl>
+                    <dl>
+                        <dt class="hide">Price</dt>
+                        <dd>$25 $15 and up</dd>
+                    </dl>
+                    <dl>
+                        <dd>40% OFF</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-danger marketbox">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
+    <div class="container" margin-left="10px">
+        <div class="row">
+            <h4>Featured Videos</h4>
+            <p>See what everyone is saying</p>
+        </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-success marketbox">
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container" margin-left="10px">    
-  <div class="row">
-    <h4>Featured Videos</h4>
-    <p>See what everyone is saying</p>
-  </div>
-</div>
-
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Featured Video</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">Featured Video</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-primary">
-        <div class="panel-heading">Featured Video</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-      </div>
-    </div>
-  </div>
-</div><br><br>
-
-<footer class="container-fluid text-center">
-  <p>Online Store Copyright</p>  
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
-</footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary marketbox">
+                    <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <dl>
+                        <dt class="hide">Title</dt>
+                        <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                        <dt class="hide">Designer</dt>
+                        <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                        <dt class="hide">Details</dt>
+                    </dl>
+                    <dl>
+                        <dt class="hide">Price</dt>
+                        <dd>$25 $15 and up</dd>
+                    </dl>
+                    <dl>
+                        <dd>40% OFF</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary marketbox">
+                    <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <dl>
+                        <dt class="hide">Title</dt>
+                        <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                        <dt class="hide">Designer</dt>
+                        <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                        <dt class="hide">Details</dt>
+                    </dl>
+                    <dl>
+                        <dt class="hide">Price</dt>
+                        <dd>$25 $15 and up</dd>
+                    </dl>
+                    <dl>
+                        <dd>40% OFF</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary marketbox">
+                    <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <dl>
+                        <dt class="hide">Title</dt>
+                        <dd><a title="Bear" href="/product/7980/Bear" rel="product">Bear</a></dd>
+                        <dt class="hide">Designer</dt>
+                        <dd>Design by <a href="http://www.threadless.com/profile/3620618"> Sokol</a></dd>
+                        <dt class="hide">Details</dt>
+                    </dl>
+                    <dl>
+                        <dt class="hide">Price</dt>
+                        <dd>$25 $15 and up</dd>
+                    </dl>
+                    <dl>
+                        <dd>40% OFF</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <footer class="container-fluid text-center">
+        <p>Online Store Copyright</p>
+        <form class="form-inline">
+            Get deals:
+            <input type="email" class="form-control" size="50" placeholder="Email Address">
+            <button type="button" class="btn btn-danger">Sign Up</button>
+        </form>
+    </footer>
 </body>
 </html>
